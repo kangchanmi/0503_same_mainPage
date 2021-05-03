@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style_common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="script/script_common.js"></script>
+</head>
+
+<body>
+    <div id="topBtn" id="topBtn">
+        <img src="images/Icon/btn_prev.png" alt="맨위로가기" width="27">
+    </div>
+
+
+    <div id="headerBG">
+        <header id="header">
+            <div id="headerLogo">
+                <a href="index.html">
+                    <img src="images/headerLogo.png" alt="헤더 로고" width="200">
+                    <span></span>
+                </a>
+            </div>
+            <!--div#headerLogo-->
+
+            <div id="search">
+                <input type="text" placeholder="봄맞이 서재가구 30%할인">
+            </div>
+
+            <nav id="gnb">
+                <ul id="mainMenu">
+                    <li>
+                        <a href="#">카테고리</a>
+                        <ul class="subMenu">
+                            <li><a href="#">거실</a></li>
+                            <li><a href="Categories/Kitchen.html">주방</a></li>
+                            <li><a href="Categories/livingRoom.html">침실</a></li>
+                            <li><a href="#">자녀방</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">주문</a>
+                        <ul class="subMenu">
+                            <li><a href="#">장바구니</a></li>
+                            <li><a href="#">주문 조회</a></li>
+                            <li><a href="#">구매 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="#">프로모션</a>
+                        <ul class="subMenu">
+                            <li><a href="#">할인혜택</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">당첨자발표</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul class="subMenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> <!-- GNB 메뉴 -->
+
+            <div id="lnb">
+                <a href="#">
+                    <img src="images/Icon/icon01.png" alt="로그인 아이콘" width="35">
+                    <br>
+                    <span>로그인</span>
+                </a>
+                <a href="#">
+                    <img src="images/Icon/top_cart.png" alt="장바구니 아이콘" width="25">
+                    <br>
+                    <span>장바구니</span>
+                </a>
+                <a href="#">
+                    <img src="images/Icon/icon_shipping.png" alt="배송 아이콘" width="27">
+                    <br>
+                    <span>주문</span>
+                </a>
+            </div> <!-- div#lnb -->
+
+        </header> <!-- header#header -->
+    </div>
+    <!--div#headerBG-->
+
+
+
+    <div id="wrap">
+        <main id="main">
+            <div id="slideBtn">
+                <button type="button" class="PrevBtn">
+                    <img src="images/Icon/Prev.png" alt="Prev 아이콘" width="20">
+                </button>
+                <div id="mainSlide">
+                    <div id="msShuttleFrame">
+                        <a href="#">
+                            <img src="images/Slide/slide2.jpg" alt="메인슬라이드 이미지1" width="1250">
+                        </a>
+                        <a href="#">
+                            <img src="images/Slide/slide1.PNG" alt="메인슬라이드 이미지2" width="1250">
+                        </a>
+                        <a href="#">
+                            <img src="images/Slide/slide3.jpg" alt="메인슬라이드 이미지3" width="1250">
+                        </a>
+                    </div> <!-- 메인 슬라이드 - 셔틀 프레임 -->
+                </div> <!-- 메인 슬라이드 영역 -->
+                <button type="button" class="NextBtn">
+                    <img src="images/Icon/next.png" alt="Next 이미지" width="20">
+                </button>
+            </div> <!-- div#slideBtn -->
+        </main> <!-- main#main-->
+
+
+        <!-- /////////////////////// 추천제품 소개 /////////////////////// -->
+        <aside id="aside">
+
+            <div id="rec_Area">
+                <h1>추천제품</h1>
+                <div id="rec_content">
+                    <div class="rec_Img">
+                        <a href="#"><img src="images/rec_Img/10537_main_029.jpg" alt="추천제품 이미지1" width="250"></a>
+                        <div class="rec_text">
+                            <span>주방 멀티 수납장</span>
+                            <p>99,000원</p>
+                        </div> <!-- div.rec_text -->
+                    </div> <!-- div.rec_Img -->
+                    <div class="rec_Img">
+                        <a href="#"><img src="images/rec_Img/1470_main_04.jpg" alt="추천제품 이미지2" width="250"></a>
+                        <div class="rec_text">
+                            <span>데이나 원목 옷장</span>
+                            <p>144,000원</p>
+                        </div> <!-- div.rec_text -->
+                    </div> <!-- div.rec_Img -->
+                    <div class="rec_Img">
+                        <a href="#"><img src="images/rec_Img/8414_main_090.jpg" alt="추천제품 이미지3" width="250"></a>
+                        <div class="rec_text">
+                            <span>세임 아일랜드 멀티 수납장</span>
+                            <p>169,000원</p>
+                        </div> <!-- div.rec_text -->
+                    </div> <!-- div.rec_Img -->
+                    <div class="rec_Img">
+                        <a href="#"><img src="images/rec_Img/2892_main_05.jpg" alt="추천제품 이미지4" width="250"></a>
+                        <div class="rec_text">
+                            <span>세임 네추럴 원목 2인 식탁</span>
+                            <p>119,000원</p>
+                        </div>
+                    </div> <!-- div.rec_Img -->
+                </div> <!-- div#rec_content -->
+            </div> <!-- div#rec_Area -->
+            <!-- /////////////////////// 추천제품 소개 /////////////////////// -->
+
+
+            <!-- /////////////////////// 신상품 소개 /////////////////////// -->
+            <div id="newPdt">
+                <div id="new_Area">
+                    <h1>신제품</h1>
+                    <div id="new_Content">
+                        <div class="new_Img">
+                            <a href="#"><img src="images/New/11045_main_04.jpg" alt="신제품이미지1" width="250"></a>
+                            <div class="new_text">
+                                <span>일자형 롱 바디필로우 2종</span>
+                                <p>16,900원</p>
+                            </div> <!-- div.new_text -->
+                        </div> <!-- div.new_Img -->
+                        <div class="new_Img">
+                            <a href="#"><img src="images/New/540_main_028.jpg" alt="신제품이미지2" width="250"></a>
+                            <div class="new_text">
+                                <span>밀키올리 양문형 다용도 서랍장</span>
+                                <p>103,900원</p>
+                            </div> <!-- div.new_text -->
+                        </div> <!-- div.new_Img -->
+                        <div class="new_Img">
+                            <a href="#"><img src="images/New/9953_main_084.jpg" alt="신제품이미지3" width="250"></a>
+                            <div class="new_text">
+                                <span>슈가 아쿠아텍스 소파</span>
+                                <p>328,000원</p>
+                            </div> <!-- div.new_text -->
+                        </div> <!-- div.new_Img -->
+                        <div class="new_Img">
+                            <a href="#"><img src="images/New/Table_main.jpg" alt="신제품이미지4" width="250"></a>
+                            <div class="new_text">
+                                <span>세임 모던 블랙 4~6인용 소파</span>
+                                <p>456,000원</p>
+                            </div> <!-- div.new_text -->
+                        </div> <!-- div.new_Img -->
+                    </div>
+                    <!--div#new_Content -->
+                </div> <!-- div#new_Area -->
+            </div> <!-- div#newPdt -->
+            <!-- /////////////////////// 신상품 소개 /////////////////////// -->
+
+
+            <!-- /////////////////////// 베스트 상품 소개 /////////////////////// -->
+            <div id="bestPdt">
+                <div id="best_Area">
+                    <h1>BEST</h1>
+                    <div id="best_Content">
+                        <div class="best_Img">
+                            <a href="#"><img src="images/Best/10990_main_09.jpg" alt="베스트이미지1" width="250"></a>
+                            <div class="best_text">
+                                <span>월넛 킹사이즈 침대</span>
+                                <p>316,000원</p>
+                            </div> <!-- div.best_text -->
+                        </div> <!-- div.best_Img -->
+                        <div class="best_Img">
+                            <a href="#"><img src="images/Best/c390ab918a5d0.jpg" alt="베스트이미지2" width="250"></a>
+                            <div class="best_text">
+                                <span>모던 앤 브라운 아일랜드 홈바</span>
+                                <p>283,900원</p>
+                            </div> <!-- div.best_text -->
+                        </div> <!-- div.best_Img -->
+                        <div class="best_Img">
+                            <a href="#"><img src="images/Best/100130_1.jpg" alt="베스트이미지3" width="250"></a>
+                            <div class="best_text">
+                                <span>비스타 모던 3~5인용 식탁</span>
+                                <p>182,400원</p>
+                            </div> <!-- div.best_text -->
+                        </div> <!-- div.best_Img -->
+                        <div class="best_Img">
+                            <a href="#"><img src="images/Best/bed_main_02.jpg" alt="베스트이미지4" width="250"></a>
+                            <div class="best_text">
+                                <span>파스텔 브라운 패브릭 침대</span>
+                                <p>374,000원</p>
+                            </div> <!-- div.best_text -->
+                        </div> <!-- div.best_Img -->
+                    </div>
+                    <!--div#best_Content -->
+                </div> <!-- div#best_Area -->
+            </div> <!-- div#bestPdt -->
+            <!-- /////////////////////// 신상품 소개 /////////////////////// -->
+        </aside> <!-- aside#aside -->
+
+
+
+    </div>
+    <!--div#wrap-->
+
+    <div id="bgArea">
+        <div class="bg">
+            <span>세상에 단 하나 뿐인 나만의 가구를 만나세요</span>
+            <p>Same : Furniture Collection</p>
+        </div> <!-- div.bg -->
+    </div> <!-- div#bgArea -->
+
+    <div id="footerBG">
+        <footer id="footer">
+
+            <div id="footerArea">
+                <nav id="fnb">
+                    <ul>
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                </nav> <!-- nav#fnb -->
+
+                <div id="address">
+                    COMPANY : (주)세임가구 I OWNER : 강일선 I BUSINESS LICENSE : 145-81-66149 I MAIL ORDER
+                    LICENSE : 2012-부천원미-00692호
+                    <br>
+                    ADDRESS : 경기도 부천시 원미구 중동로 29 (런어웨이타워) 104호
+                    <br>
+                    CALL CENTER : 1641-8324 I FAX : 032-715-0869
+                    <br>
+                    ©Samefurniture.co.kr ALL RIGHTS RESERVED. 호스팅제공 : 케이씨엠(주)
+                </div> <!-- div#address -->
+
+            </div> <!-- div#footContent -->
+
+
+            <div id="contact">
+                <h1>Contact Us</h1>
+                <p><b>고객센터</b></p>
+                <p>1845-1952</p>
+                <p><b>평일</b> 09:00 ~ 17:00</p>
+                <p><b>점심</b> 12:00 ~ 13:00</p>
+            </div> <!-- div#contact -->
+
+
+            <div id="follow">
+                <div id="snsArea">
+                    <h1>Follow Us</h1>
+                    <div id="snsImg">
+                        <a href="#"><img src="images/Icon/icon-fb.svg" alt="페이스북이미지" width="36"></a>
+                        <a href="#"><img src="images/Icon/icon-ig.svg" alt="인스타이미지" width="36"></a>
+                        <a href="#"><img src="images/Icon/icon-yt.svg" alt="유튜브이미지" width="36"></a>
+                    </div>
+                </div> <!-- div#snsArea -->
+
+                <div id="Maps">
+                    <select>
+                        <option>Brand Site</option>
+                        <option>furniture</option>
+                        <option>Same</option>
+                    </select>
+                </div> <!-- div#Maps -->
+            </div> <!-- div#folloew -->
+        </footer> <!-- footer#footer -->
+    </div>
+    <!-- div#footerBG -->
+
+
+
+    <!-- ///////////////////////////////// 추천 제품 ////////////////////////////////////// -->
+
+    <!--div#modal1>div.popUp>img+span+button-->
+
+    <div id="recmodal1" class="modal">
+        <div class="popUp">
+            <img src="images/rec_Img/10537_main_029.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>
+                    주방 멀티 수납장
+                    <b>99,000원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+
+    <div id="recmodal2" class="modal">
+        <div class="popUp">
+            <img src="images/rec_Img/1470_main_04.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>데이나 원목 옷장
+                    <b>144,000원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+
+    <div id="recmodal3" class="modal">
+        <div class="popUp">
+            <img src="images/rec_Img/8414_main_090.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>세임 아일랜드 멀티 수납장
+                    <b>169,000원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+
+    <div id="recmodal4" class="modal">
+        <div class="popUp">
+            <img src="images/rec_Img/2892_main_05.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>네추럴 원목 2인용 식탁
+                    <b>119,000원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+
+
+    <!-- ///////////////////////////////// 신제품 ////////////////////////////////////// -->
+    <div id="newmodal1" class="modal">
+        <div class="popUp">
+            <img src="images/New/11045_main_04.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>일자형 롱 바디필로우 2종
+                    <b>16,900원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+
+    <div id="newmodal2" class="modal">
+        <div class="popUp">
+            <img src="images/New/540_main_028.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>밀키올리 양문형 다용도 서랍장
+                    <b>103,900원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+
+    <div id="newmodal3" class="modal">
+        <div class="popUp">
+            <img src="images/New/9953_main_084.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>슈가 아쿠아텍스 소파
+                    <b>328,000원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+
+    <div id="newmodal4" class="modal">
+        <div class="popUp">
+            <img src="images/New/Table_main.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>세임 모던 블랙 4~6인용 소파
+                    <b>456,000원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+
+
+
+    <!-- ///////////////////////////////// 베스트 ////////////////////////////////////// -->
+
+
+    <div id="bestmodal1" class="modal">
+        <div class="popUp">
+            <img src="images/Best/10990_main_09.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>월넛 킹사이즈 침대
+                    <b>316,000원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+    <div id="bestmodal2" class="modal">
+        <div class="popUp">
+            <img src="images/Best/c390ab918a5d0.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>모던 앤 브라운 아일랜드 홈바
+                    <b>293,900원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+    <div id="bestmodal3" class="modal">
+        <div class="popUp">
+            <img src="images/Best/100130_1.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>비스타 모던 3~5인용 식탁
+                    <b>182,400원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+
+    <div id="bestmodal4" class="modal">
+        <div class="popUp">
+            <img src="images/Best/bed_main_02.jpg" alt="모달팝업이미지" width="520">
+
+            <div class="modalSide">
+                <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
+                <br>
+                <span>파스텔 브라운 패브릭 침대
+                    <b>374,000원</b>
+                </span>
+                <div class="delivery">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><img src="images/Icon/top_cart.png" alt="장바구니" width="25"></a>
+                </div> <!-- div#delivery -->
+
+                <div class="productInfo">
+                    <ul>
+                        <li>브랜드</li>
+                        <li>세임 가구</li>
+                    </ul>
+                    <ul>
+                        <li>원산지</li>
+                        <li>대한민국</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>별도의 배송비 없음</li>
+                    </ul>
+                    <ul>
+                        <li>유의사항</li>
+                        <li>교환/취소/반품/환불은 상품수령 후 7일 이내 가능</li>
+                    </ul>
+                </div> <!-- div.productInfo -->
+
+                <div class="deliveryBtn">
+                    <button type="button">리뷰보기</button>
+                    <button type="button">바로구매</button>
+                </div> <!-- div.deliveryBtn -->
+                <button type="button">&times;</button>
+            </div> <!-- div.modalSide -->
+        </div> <!-- div.popUp -->
+    </div> <!-- div#modal  div.modal -->
+
+</body></html>
