@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -26,42 +27,31 @@
             <!--div#headerLogo-->
 
             <div id="search">
-                <input type="text" placeholder="봄맞이 서재가구 30%할인">
+                <input type="text" placeholder="봄맞이 침실가구 30%할인">
             </div>
 
             <nav id="gnb">
                 <ul id="mainMenu">
                     <li>
-                        <a href="#">카테고리</a>
+                        <a href="Categories/Categories.html">카테고리</a>
                         <ul class="subMenu">
                             <li><a href="#">거실</a></li>
                             <li><a href="Categories/Kitchen.html">주방</a></li>
-                            <li><a href="Categories/livingRoom.html">침실</a></li>
-                            <li><a href="#">자녀방</a></li>
+                            <li><a href="Categories/BedRoom.html">침실</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">주문</a>
                         <ul class="subMenu">
-                            <li><a href="#">장바구니</a></li>
+                            <li><a href="Order/Basket.html">장바구니</a></li>
                             <li><a href="#">주문 조회</a></li>
-                            <li><a href="#">구매 내역</a></li>
                         </ul>
                     </li>
                     <li>
-                    <li>
-                        <a href="#">프로모션</a>
-                        <ul class="subMenu">
-                            <li><a href="#">할인혜택</a></li>
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">당첨자발표</a></li>
-                        </ul>
-                    </li>
                     <li>
                         <a href="#">고객센터</a>
                         <ul class="subMenu">
                             <li><a href="#">공지사항</a></li>
-                            <li><a href="#">FAQ</a></li>
                             <li><a href="#">1:1 문의</a></li>
                         </ul>
                     </li>
@@ -69,20 +59,20 @@
             </nav> <!-- GNB 메뉴 -->
 
             <div id="lnb">
-                <a href="#">
-                    <img src="images/Icon/icon01.png" alt="로그인 아이콘" width="35">
+                <a href="Lnb/login.html">
+                    <img src="images/Icon/login.svg" alt="로그인 아이콘" width="35" height="28">
                     <br>
                     <span>로그인</span>
                 </a>
-                <a href="#">
+                <a href="Order/Basket.html">
                     <img src="images/Icon/top_cart.png" alt="장바구니 아이콘" width="25">
                     <br>
                     <span>장바구니</span>
                 </a>
-                <a href="#">
-                    <img src="images/Icon/icon_shipping.png" alt="배송 아이콘" width="27">
+                <a href="Customer/Join.html">
+                    <img src="images/Icon/icon01.png" alt="회원가입 아이콘" width="35">
                     <br>
-                    <span>주문</span>
+                    <span>회원가입</span>
                 </a>
             </div> <!-- div#lnb -->
 
@@ -100,14 +90,13 @@
                 </button>
                 <div id="mainSlide">
                     <div id="msShuttleFrame">
-                        <a href="#">
-                            <img src="images/Slide/slide2.jpg" alt="메인슬라이드 이미지1" width="1250">
+                        <a href="Categories/BedRoom.html">
+                            <img src="images/Slide/Bed2.jpg" alt="메인슬라이드 이미지1" width="1400">
+                            <span><b>30%</b><p>할인 특가</p></span>
+                            <span>침실 가구 보러가기</span>
                         </a>
-                        <a href="#">
-                            <img src="images/Slide/slide1.PNG" alt="메인슬라이드 이미지2" width="1250">
-                        </a>
-                        <a href="#">
-                            <img src="images/Slide/slide3.jpg" alt="메인슬라이드 이미지3" width="1250">
+                        <a href="Categories/Kitchen.html">
+                            <img src="images/Slide/kit2.png" alt="메인슬라이드 이미지2" width="1400">
                         </a>
                     </div> <!-- 메인 슬라이드 - 셔틀 프레임 -->
                 </div> <!-- 메인 슬라이드 영역 -->
@@ -205,8 +194,8 @@
                         <div class="best_Img">
                             <a href="#"><img src="images/Best/10990_main_09.jpg" alt="베스트이미지1" width="250"></a>
                             <div class="best_text">
-                                <span>월넛 킹사이즈 침대</span>
-                                <p>316,000원</p>
+                                <span>월넛 황토숯 수납형 침대</span>
+                                <p>562,000원</p>
                             </div> <!-- div.best_text -->
                         </div> <!-- div.best_Img -->
                         <div class="best_Img">
@@ -243,10 +232,12 @@
     <!--div#wrap-->
 
     <div id="bgArea">
-        <div class="bg">
-            <span>세상에 단 하나 뿐인 나만의 가구를 만나세요</span>
-            <p>Same : Furniture Collection</p>
-        </div> <!-- div.bg -->
+        <a href="Categories/BedRoom.html">
+            <div class="bg">
+                <span>세상에 단 하나 뿐인 나만의 가구를 만나세요</span>
+                <p>Same : Furniture Collection</p>
+            </div> <!-- div.bg -->
+        </a>
     </div> <!-- div#bgArea -->
 
     <div id="footerBG">
@@ -255,11 +246,11 @@
             <div id="footerArea">
                 <nav id="fnb">
                     <ul>
-                        <li><a href="#">홈</a></li>
+                        <li><a href="index.html">홈</a></li>
                         <li><a href="#">회사소개</a></li>
                         <li><a href="#">사이트맵</a></li>
                         <li><a href="#">개인정보처리방침</a></li>
-                        <li><a href="#">이용약관</a></li>
+                        <li><a href="Customer/source/membership.html">이용약관</a></li>
                     </ul>
                 </nav> <!-- nav#fnb -->
 
@@ -290,9 +281,9 @@
                 <div id="snsArea">
                     <h1>Follow Us</h1>
                     <div id="snsImg">
-                        <a href="#"><img src="images/Icon/icon-fb.svg" alt="페이스북이미지" width="36"></a>
-                        <a href="#"><img src="images/Icon/icon-ig.svg" alt="인스타이미지" width="36"></a>
-                        <a href="#"><img src="images/Icon/icon-yt.svg" alt="유튜브이미지" width="36"></a>
+                        <a href="https://www.facebook.com/"><img src="images/Icon/icon-fb.svg" alt="페이스북이미지" width="36"></a>
+                        <a href="https://www.instagram.com/"><img src="images/Icon/icon-ig.svg" alt="인스타이미지" width="36"></a>
+                        <a href="https://www.youtube.com/"><img src="images/Icon/icon-yt.svg" alt="유튜브이미지" width="36"></a>
                     </div>
                 </div> <!-- div#snsArea -->
 
@@ -689,8 +680,8 @@
             <div class="modalSide">
                 <a href="#"><img src="images/banner/f747e27bf99eaaf6210281a218e67016.jpg" alt="모달이벤트 배너" width="300"></a>
                 <br>
-                <span>월넛 킹사이즈 침대
-                    <b>316,000원</b>
+                <span>월넛 황토숯 수납형 침대
+                    <b>562,000원</b>
                 </span>
                 <div class="delivery">
                     <a href="#"><i class="far fa-heart"></i></a>
@@ -859,4 +850,6 @@
         </div> <!-- div.popUp -->
     </div> <!-- div#modal  div.modal -->
 
-</body></html>
+</body>
+
+</html>

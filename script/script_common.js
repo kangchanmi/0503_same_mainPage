@@ -16,11 +16,11 @@ $(function () {
 
     /* 메인 슬라이드 쇼 */
 
-    /* 방향키에 mouseover 시 슬라이드 멈춤 */
-    var slideGo = setInterval(fnSlide, 7000);
+    var slideGo = setInterval(fnSlide, 8000);
 
+    /* 방향키에 mouseover 시 슬라이드 멈춤 */
     $("#slideBtn button").mouseout(function () {
-        slideGo = setInterval(fnSlide, 7000);
+        slideGo = setInterval(fnSlide, 8000);
     });
     $("#slideBtn button").mouseover(function () {
         clearInterval(slideGo);
@@ -29,7 +29,7 @@ $(function () {
 
     function fnSlide() {
         $("#msShuttleFrame").animate({
-                "margin-left": "-1250px"
+                "margin-left": "-1400px"
             },
             1000,
             "swing",
@@ -48,7 +48,7 @@ $(function () {
     $(".PrevBtn").click(function () {
         $("#msShuttleFrame a:last-child").insertBefore("#msShuttleFrame a:first-child");
         $("#msShuttleFrame").css({
-            "margin-left": "-1250px"
+            "margin-left": "-1400px"
         });
         $("#msShuttleFrame").stop().animate({
                 "margin-left": "0"
@@ -61,7 +61,7 @@ $(function () {
     /* Next 버튼 */
     $(".NextBtn").click(function () {
         $("#msShuttleFrame").stop().animate({
-                "margin-left": "-1250px"
+                "margin-left": "-1400px"
             },
             800,
             "swing",
@@ -108,6 +108,37 @@ $(function () {
             "display": "none"
         });
     });
+
+
+    /* 찜버튼 중복 아이콘 제거 */
+    $(".modalSide>button").click(function () {
+        $(".delivery a:nth-child(2)").css({
+            "display": "none"
+        });
+    });
+    /* 찜버튼 중복 아이콘 제거 */
+
+
+    /* 리뷰 */
+    $(".deliveryBtn button:first-child").click(function () {
+        alert("등록된 리뷰가 없습니다.");
+    });
+    /* 리뷰 */
+
+
+    /* 장바구니 */
+    $(".delivery a:last-child").click(function() {
+        location.href = "Order/Basket.html";
+    });
+    /* 장바구니 */
+
+
+    /* 바로 구매 */
+    $(".deliveryBtn button:last-child").click(function () {
+        location.href = "Order/Basket.html";
+    });
+    /* 바로 구매 */
+
 
 
     /* ///// 추천제품 ///// */

@@ -66,33 +66,37 @@ body>#topBtn {
 div#headerBG {
     width: 100%;
     height: 100px;
+    margin-top: 20px;
     background-color: #fff;
 
     position: fixed;
-    top: 0px;
+    top: -20px;
     z-index: 3;
 }
 #headerBG #header {
+    width: 1600px;
     display: flex;
 }
     /* 헤더 로고 */
 #headerBG #header #headerLogo {
-    width: 210px;
-    margin-left: 60px;
+    width: 200px;
+    margin: 0 60px;
     line-height: 80px;
 }
     /* 헤더 로고 */
 
     /* 검색창 */
+#headerBG #header #search {
+    width: 410px;
+    margin-right: 80px;
+}
 #headerBG #header #search input {
     width: 400px;
     height: 45px;
     padding: 2px 2px 2px 10px;
     margin-top: 6%;
-    margin-left: 18%;
 
     font-size: 16px;
-    outline: none;
     border: none;
     border-bottom: 2px solid #666;
 
@@ -113,8 +117,9 @@ div#headerBG {
 
     /* GNB 메뉴 */
 #headerBG #header nav#gnb {
-    margin-left: 10%;
+    width: 370px;
     margin-top: 30px;
+    margin-left: 35px;
 }
 #headerBG #header nav#gnb ul#mainMenu {
     text-align: center;
@@ -160,13 +165,14 @@ div#headerBG {
 
     /* LNB 메뉴 */
 #headerBG #header #lnb {
-    margin-left: 1%;
-
+    width: 310px;
+    margin-left: 35px;
 /*    border: 1px solid #000;*/
     display: flex;
 }
 #headerBG #header #lnb a {
     width: 80px;
+    height: 60px;
     margin-top: 10%;
     margin-left: 10%;
     line-height: 25px;
@@ -174,7 +180,6 @@ div#headerBG {
     font-size: 14px;
     color: #666;
     font-weight: bold;
-/*    border: 1px solid #000;*/
     text-align: center;
 }
 #headerBG #header #lnb a:nth-child(2) {
@@ -196,14 +201,13 @@ div#headerBG {
 }
     /* LNB 메뉴 */
 
-
 /* 헤더 부분 */
 
 
 
 /* div#wrap */
 div#wrap {
-    width: 1300px;
+    width: 1650px;
     margin: 15px auto;
 }
 /* div#wrap */
@@ -219,7 +223,7 @@ main#main #slideBtn {
 }
 main#main #slideBtn button {
     width: 70px;
-    height: 65px;
+    height: 70px;
     margin: 20px;
     padding-left: 8px;
 
@@ -227,7 +231,7 @@ main#main #slideBtn button {
     background-color: rgba(133, 133, 133, 0.6);
     margin-top: 17%;
     border: none;
-    border-radius: 200px;
+    border-radius: 70px;
 
     cursor: pointer;
 }
@@ -235,7 +239,7 @@ main#main #slideBtn button.PrevBtn {
     padding-right: 8px;
 }
 main#main #mainSlide {
-    width: 1250px;
+    width: 1400px;
     height: 500px;
 
 /*    border: 1px solid #000;*/
@@ -243,13 +247,61 @@ main#main #mainSlide {
     overflow: hidden;
 }
 main#main #msShuttleFrame {
-    width: 3800px;
+    width: 2900px;
     height: 500px;
 
 /*    border: 1px solid #000;*/
 }
 main#main #msShuttleFrame a {
     float: left;
+    position: relative;
+}
+main#main #msShuttleFrame a:first-child span {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-15%, -86%);
+
+}
+main#main #msShuttleFrame a:first-child span>b {
+
+
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    font-size: 102px;
+}
+main#main #msShuttleFrame a:first-child span>p {
+    margin-left: 12px;
+
+    color: rgba(50, 29, 24, 0.9);
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 49px;
+
+    display: inline-block;
+
+    position: relative;
+    top: -20px;
+}
+main#main #msShuttleFrame a:first-child span:last-child {
+    width: 200px;
+    padding: 7px 0;
+
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-15%, 400%);
+}
+main#main #msShuttleFrame a:hover:first-child span:last-child {
+    color: #ffe6b7;
 }
 main#main #msShuttleFrame a>img{
     height: 500px;
@@ -263,6 +315,8 @@ main#main #msShuttleFrame a>img{
 
 /* aside 콘텐츠 */
 aside#aside {
+    width: 1400px;
+    margin: 0 auto;
     margin-top: 75px;
 }
     /* ///////// 추천 제품 ///////// */
